@@ -2,11 +2,14 @@
 // The basic two column layout
 //
 
+body {
+  padding-top: 10px;
+}
+
 .side-bar {
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: $sidebar-color;
 
   @include mq(md) {
     flex-wrap: nowrap;
@@ -14,8 +17,7 @@
     width: $nav-width-md;
     height: 100%;
     flex-direction: column;
-    border-right: $border $border-color;
-    align-items: flex-end;
+    align-items: center;
   }
 
   @include mq(lg) {
@@ -57,9 +59,10 @@
   @include mq(md) {
     display: flex;
     justify-content: space-between;
-    height: $header-height;
-    background-color: $body-background-color;
-    border-bottom: $border $border-color;
+    height: $header-height;    
+    border: 2px solid #f7a41d;
+    border-radius: 20px;
+    overflow: hidden;
   }
 
   &.nav-open {
@@ -90,7 +93,6 @@
 
   @include mq(md) {
     display: block;
-    padding-top: $sp-8;
     padding-bottom: $gutter-spacing-sm;
     overflow-y: auto;
     flex: 1 1 auto;
@@ -105,7 +107,6 @@
   @include mq(md) {
     height: $header-height;
     max-height: $header-height;
-    border-bottom: $border $border-color;
   }
 }
 
@@ -128,7 +129,7 @@
 
 @if variable-exists(logo) {
   .site-logo {
-    width: 100%;
+    flex: auto;
     height: 100%;
     background-image: url($logo);
     background-repeat: no-repeat;
@@ -156,14 +157,6 @@
     rgba($feedback-color, 1) 0%,
     rgba($feedback-color, 0.8) 80%,
     rgba($feedback-color, 0) 100%
-  );
-}
-
-.site-button:hover {
-  background-image: linear-gradient(
-    -90deg,
-    rgba($feedback-color, 1) 0%,
-    rgba($feedback-color, 0.8) 100%
   );
 }
 
