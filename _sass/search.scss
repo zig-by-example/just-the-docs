@@ -24,6 +24,7 @@
   z-index: 1;
   height: $sp-8;
   overflow: hidden;
+  border: 2px solid #f7a41d;
   border-radius: $border-radius;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   transition: height linear #{$transition-duration / 2};
@@ -31,7 +32,6 @@
   @include mq(md) {
     position: absolute;
     width: 100%;
-    max-width: $search-results-width;
     height: 100% !important;
     border-radius: 0;
     box-shadow: none;
@@ -78,11 +78,6 @@
   display: flex;
   height: 100%;
   padding-left: $gutter-spacing-sm;
-
-  @include mq(md) {
-    padding-left: $gutter-spacing;
-    transition: padding-left linear #{$transition-duration / 2};
-  }
 
   .search-icon {
     width: #{$sp-4 * 1.2};
