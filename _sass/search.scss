@@ -25,7 +25,7 @@
   height: $sp-8;
   overflow: hidden;
   border: 2px solid #f7a41d;
-  border-radius: $border-radius;
+  border-radius: 25px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   transition: height linear #{$transition-duration / 2};
 
