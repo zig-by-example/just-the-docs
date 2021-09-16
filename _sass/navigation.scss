@@ -21,7 +21,6 @@
     .nav-list-link {
       border-radius: 5px;
       display: block;
-      margin-bottom: 5px;
       min-height: $nav-list-item-height-sm;
       padding-top: $sp-1;
       padding-bottom: $sp-1;
@@ -35,6 +34,7 @@
       }
 
       @include mq(md) {
+        margin-bottom: 5px;
         min-height: $nav-list-item-height;
         line-height: #{$nav-list-item-height - 2 * $sp-1};
         @if $nav-list-expander-right {
