@@ -54,7 +54,6 @@ body {
 .main-header {
   z-index: 0;
   display: none;
-  background-color: $sidebar-color;
 
   @include mq(md) {
     display: flex;
