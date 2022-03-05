@@ -53,6 +53,7 @@ body {
 
 .main-header {
   z-index: 0;
+  background: transparent;
   display: none;
 
   @include mq(md) {
