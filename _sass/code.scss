@@ -6,7 +6,6 @@
 code {
   padding: 0.2em 0.15em;
   font-weight: 400;
-  background-color: $code-background-color;
   border: $border $border-color;
   border-radius: $border-radius;
 }
@@ -45,12 +44,14 @@ a:visited code {
 
 // ```[LANG]...```
 div.highlighter-rouge {
+  background: black;
+  box-shadow: 0 0 15px -8px #f7a41d;
+  border-radius: 10px;
+  border: solid 1px #f7a41d73;
   padding: $sp-3;
   margin-top: 0;
   margin-bottom: $sp-3;
   overflow-x: auto;
-  background-color: $code-background-color;
-  border-radius: $border-radius;
   box-shadow: none;
   -webkit-overflow-scrolling: touch;
 
