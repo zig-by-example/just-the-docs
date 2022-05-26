@@ -111,6 +111,9 @@ body {
 
 .site-title {
   margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 46px;
   background: black;
   border-radius: 10px;
   color: #d08c1d;
@@ -120,8 +123,6 @@ body {
   display: flex;
   height: 100%;
   align-items: center;
-  padding-top: $sp-3;
-  padding-bottom: $sp-3;
   color: $body-heading-color;
   @include fs-6;
 
@@ -133,12 +134,14 @@ body {
 
 @if variable-exists(logo) {
   .site-logo {
+    width: 171px;
+    position: absolute;
+    height: 182px;
     flex: auto;
-    height: 100%;
     background-image: url($logo);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
+    background-repeat: round;
+    background-position: center;
+    background-size: auto;
   }
 }
 
@@ -173,6 +176,7 @@ body {
 .site-footer {
   background: black;
   border-radius: 10px;
+  margin-bottom: 15px;
   margin-top: 5px;
   @include container;
   position: absolute;
