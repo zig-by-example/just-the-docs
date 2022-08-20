@@ -59,12 +59,6 @@ body {
   background: transparent;
   display: none;
 
-  @include mq(md) {
-    display: flex;
-    justify-content: space-between;
-    height: $header-height;
-  }
-
   &.nav-open {
     display: block;
   }
