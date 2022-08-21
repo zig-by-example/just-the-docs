@@ -45,13 +45,6 @@ body {
   background: black;
   border-radius: 10px;
   @include container;
-  padding-top: $gutter-spacing-sm;
-  padding-bottom: $gutter-spacing-sm;
-
-  @include mq(md) {
-    padding-top: $gutter-spacing;
-    padding-bottom: $gutter-spacing;
-  }
 }
 
 .main-header {
