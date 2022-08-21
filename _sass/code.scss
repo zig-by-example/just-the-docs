@@ -4,6 +4,7 @@
 // stylelint-disable selector-no-qualifying-type, declaration-block-semicolon-newline-after,declaration-block-single-line-max-declarations, selector-no-type, selector-max-type
 
 code {
+  font-size: 1em !important;
   padding: 0.2em 0.15em;
   font-weight: 400;
   border: $border $border-color;
@@ -44,7 +45,7 @@ a:visited code {
 
 // ```[LANG]...```
 div.highlighter-rouge {
-  background: black;
+  background: #090909;
   box-shadow: 0 0 15px -8px #f7a41d;
   border-radius: 10px;
   border: solid 1px #f7a41d73;
