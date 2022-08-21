@@ -45,6 +45,7 @@ body {
   background: black;
   border-radius: 10px;
   @include container;
+  padding: 5px 15px !important;
 }
 
 .main-header {
